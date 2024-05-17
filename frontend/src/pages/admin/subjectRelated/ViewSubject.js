@@ -3,7 +3,7 @@ import { getClassStudents, getSubjectDetails } from '../../../redux/sclassRelate
 import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Box, Tab, Container, Typography, BottomNavigation, BottomNavigationAction, Paper } from '@mui/material';
-import { BlueButton, GreenButton, PurpleButton } from '../../../components/buttonStyles';
+import { BlueButton, GreenButton, LightBlueButton } from '../../../components/buttonStyles';
 import TableTemplate from '../../../components/TableTemplate';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
@@ -64,14 +64,14 @@ const ViewSubject = () => {
         >
           View
         </BlueButton>
-        <PurpleButton
+        <LightBlueButton
           variant="contained"
           onClick={() =>
             navigate(`/Admin/subject/student/attendance/${row.id}/${subjectID}`)
           }
         >
           Take Attendance
-        </PurpleButton>
+        </LightBlueButton>
       </>
     );
   };
@@ -85,10 +85,10 @@ const ViewSubject = () => {
         >
           View
         </BlueButton>
-        <PurpleButton variant="contained"
+        <LightBlueButton variant="contained"
           onClick={() => navigate(`/Admin/subject/student/marks/${row.id}/${subjectID}`)}>
           Provide Marks
-        </PurpleButton>
+        </LightBlueButton>
       </>
     );
   };

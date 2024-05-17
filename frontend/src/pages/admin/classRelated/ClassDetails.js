@@ -10,7 +10,7 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { resetSubjects } from "../../../redux/sclassRelated/sclassSlice";
-import { BlueButton, GreenButton, PurpleButton } from "../../../components/buttonStyles";
+import { BlueButton, GreenButton, LightBlueButton} from "../../../components/buttonStyles";
 import TableTemplate from "../../../components/TableTemplate";
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 import PersonRemoveIcon from '@mui/icons-material/PersonRemove';
@@ -152,14 +152,14 @@ const ClassDetails = () => {
                 >
                     View
                 </BlueButton>
-                <PurpleButton
+                <LightBlueButton
                     variant="contained"
                     onClick={() =>
                         navigate("/Admin/students/student/attendance/" + row.id)
                     }
                 >
                     Attendance
-                </PurpleButton>
+                </LightBlueButton>
             </>
         );
     };

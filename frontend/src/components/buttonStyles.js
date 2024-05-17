@@ -102,3 +102,15 @@ export const IndigoButton = styled(Button)`
     }
   }
 `;
+
+export const LightBlueButton = styled(Button)`
+  && {
+    background-color: #7dbbfc; 
+    color: #fff;
+    &:hover {
+      background-color: #0a1e82; 
+    }
+    &:active {
+      background-color: #7dbbfc; 
+  }
+`;
